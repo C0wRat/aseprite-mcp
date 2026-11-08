@@ -1,0 +1,15 @@
+{
+  "name": "aseprite-mcp",
+  "version": "0.1.0",
+  "description": "Create sprites, animations and tilemaps in Aseprite from Claude Code via MCP",
+  "author": {
+    "name": "C0wRat"
+  },
+  "keywords": ["aseprite", "pixel-art", "sprites", "animation", "tilemap", "gamedev", "mcp"],
+  "mcpServers": {
+    "aseprite": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/server.js"]
+    }
+  }
+}

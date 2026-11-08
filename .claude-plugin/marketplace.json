@@ -1,0 +1,13 @@
+{
+  "name": "aseprite-mcp",
+  "owner": {
+    "name": "C0wRat"
+  },
+  "plugins": [
+    {
+      "name": "aseprite-mcp",
+      "source": "./",
+      "description": "Create sprites, animations and tilemaps in Aseprite from Claude Code via MCP"
+    }
+  ]
+}
