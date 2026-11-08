@@ -1,0 +1,31 @@
+{
+  "name": "aseprite-mcp",
+  "version": "0.1.0",
+  "description": "MCP server and Claude Code plugin for creating sprites, animations and tilemaps with Aseprite",
+  "type": "module",
+  "bin": {
+    "aseprite-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "lua",
+    "skills",
+    ".claude-plugin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node20 --minify --legal-comments=none --outfile=dist/server.js --banner:js=\"#!/usr/bin/env node\nimport { createRequire } from 'module'; const require = createRequire(import.meta.url);\"",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "start": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.7"
+  }
+}

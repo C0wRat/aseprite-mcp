@@ -1,0 +1,4 @@
+node_modules/
+sprites/
+*.log
+.DS_Store
