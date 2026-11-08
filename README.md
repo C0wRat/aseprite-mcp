@@ -137,6 +137,16 @@ For Steam installs, the server adds `--noinapp` automatically so headless runs d
 - *"Create a 16×16 grass/dirt/water tileset and paint a 20×15 sample map with it. Export it as Tiled JSON."*
 - *"Open `slime.aseprite`, add a 6-frame `jump` tag with squash and stretch, and export a GIF."*
 
+## Examples
+
+[`examples/frog/`](examples/frog/) is a full character made entirely through this server: hop, tongue attack, charged super attack, mouth laser and three death animations, plus tileable animated beam pieces (muzzle / body / tip) for the laser and super beams.
+
+- `source/` – editable `.aseprite` files (80×80 frog canvas, shared pivot at (35, 60))
+- `previews/` – animated GIFs
+- `sheets/` – engine sprite sheets (`.png` + JSON with frame tags)
+
+![Frog hop](examples/frog/previews/frog_hop.gif) ![Frog super attack](examples/frog/previews/frog_super.gif)
+
 ## Development
 
 ```bash
